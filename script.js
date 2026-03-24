@@ -428,7 +428,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const defaultOption = document.createElement("option");
       defaultOption.text =
         selectedOptions.length === 0
-          ? "-- Select Categories First --"
+          ? "-- Select Request First --"
           : "No subtypes for selection";
       typSelect.appendChild(defaultOption);
     }
@@ -477,7 +477,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (typeSelect) {
           typeSelect.innerHTML =
-            '<option value="">-- Select Categories First --</option>';
+            '<option value="">-- Select Request First --</option>';
           typeSelect.disabled = true;
         }
 
@@ -604,7 +604,7 @@ document.addEventListener("DOMContentLoaded", function () {
           );
           if (!hasType) {
             showToast(
-              `Please select at least one Service Type for "${cat}".`,
+              `Please select at least one Request Detail for "${cat}".`,
               true,
             );
             return;
